@@ -5,21 +5,21 @@
 class Desktopctl < Formula
   desc "Manage persistent AI coding desktops on AWS"
   homepage "https://github.com/orchael/desktopctl"
-  version "0.7.4"
+  version "0.7.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/orchael/desktopctl/releases/download/v0.7.4/desktopctl_0.7.4_darwin_amd64.tar.gz"
-      sha256 "6794413d26ac2057d43195a0e98c0785a0fa333f0a0abe76c83900f7383b05ad"
+      url "https://github.com/orchael/desktopctl/releases/download/v0.7.5/desktopctl_0.7.5_darwin_amd64.tar.gz"
+      sha256 "e8fb6d0dc12f374184316fc31663513ccd32e784be55b1aa97efcccdd090d1c3"
 
       define_method(:install) do
         bin.install "desktopctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/orchael/desktopctl/releases/download/v0.7.4/desktopctl_0.7.4_darwin_arm64.tar.gz"
-      sha256 "53f8b3166f0c689370df86e40722aab2264e67a7442ca4b0af652d6c632a6cbf"
+      url "https://github.com/orchael/desktopctl/releases/download/v0.7.5/desktopctl_0.7.5_darwin_arm64.tar.gz"
+      sha256 "b10a1572e61a1a052d29f2c706b4696e1e0c9ff52bf665b4e33ce9cf943a3037"
 
       define_method(:install) do
         bin.install "desktopctl"
@@ -29,15 +29,15 @@ class Desktopctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orchael/desktopctl/releases/download/v0.7.4/desktopctl_0.7.4_linux_amd64.tar.gz"
-      sha256 "74e16c13e695737958e7de039a5f7c9fc13bbab1ac140d30718cee782c40c900"
+      url "https://github.com/orchael/desktopctl/releases/download/v0.7.5/desktopctl_0.7.5_linux_amd64.tar.gz"
+      sha256 "b2f109dcd6947520cd309901929aadbddf9b8f6d7944370f9fb46a8ce6449d85"
       define_method(:install) do
         bin.install "desktopctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orchael/desktopctl/releases/download/v0.7.4/desktopctl_0.7.4_linux_arm64.tar.gz"
-      sha256 "6b5c3aed771228f024818946bc7da8a93f3204272bd15deaa6cc194e933e83c0"
+      url "https://github.com/orchael/desktopctl/releases/download/v0.7.5/desktopctl_0.7.5_linux_arm64.tar.gz"
+      sha256 "12f68903b6c839db8ddd17be0082daee26ed099f8ea1a5327e3a6e6070892e32"
       define_method(:install) do
         bin.install "desktopctl"
       end
